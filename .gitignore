@@ -1,0 +1,13 @@
+# venv
+venv/
+
+# python
+dist/
+build/
+*.egg-info/
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
