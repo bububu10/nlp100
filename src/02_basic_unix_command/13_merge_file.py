@@ -3,12 +3,12 @@
 
 def main():
     col1 = open('./out/col1.txt')
-    col1_lines = [line.replace('\n', '') for line in col1.readlines()]
+    col1_lines = [line.rstrip() for line in col1.readlines()]
     print(col1_lines)
     col1.close()
 
     col2 = open('./out/col2.txt')
-    col2_lines = [line.replace('\n', '') for line in col2.readlines()]
+    col2_lines = [line.rstrip() for line in col2.readlines()]
     print(col2_lines)
     col2.close()
 

@@ -10,7 +10,7 @@ def main():
         for index, line in enumerate(file):
             if index is n:
                 return
-            print(line.replace('\n', ''))  # head -n 10 hightemp.txt
+            print(line.rstrip())  # head -n 10 hightemp.txt
 
 
 if __name__ == '__main__':
