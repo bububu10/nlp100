@@ -11,6 +11,9 @@ def main():
             col1_out.write(cols[0] + '\n')  # cat hightemp.txt | cut -f 1
             col2_out.write(cols[1] + '\n')  # cat hightemp.txt | cut -f 2
 
+    col1_out.close()
+    col2_out.close()
+
 
 if __name__ == '__main__':
     main()
