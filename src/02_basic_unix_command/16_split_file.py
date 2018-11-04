@@ -19,7 +19,7 @@ def main():
         rest = rest[line_per_file:]
         with open(base_name.format(file_number), mode='w') as out:
             for line_number in pick:
-                out.write(file.readline())
+                out.write(file.readline())  # split -l 8 hightemp.txt ./out/16_bash_split.txt.
 
     file.close()
 

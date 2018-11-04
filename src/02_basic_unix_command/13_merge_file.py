@@ -2,6 +2,7 @@
 
 
 def main():
+    # TODO メモリにすべてのデータを抱えるのでファイルが大きいと破綻する？
     col1 = open('./out/col1.txt')
     col1_lines = [line.rstrip() for line in col1.readlines()]
     print(col1_lines)
