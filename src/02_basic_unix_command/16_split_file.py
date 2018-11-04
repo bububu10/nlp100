@@ -20,7 +20,7 @@ def main():
         with open(base_name.format(file_number), mode='w') as out:
             for line_number in pick:
                 out.write(file.readline())
-                # macのsplitコマンドはnオプションがない。。。
+                # macのsplitコマンドはnオプションがない。。。1ファイルあたりの行数を指定
                 # split -l 8 hightemp.txt ./out/16_bash_split.txt.
 
     file.close()
