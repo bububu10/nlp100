@@ -15,7 +15,7 @@ def main():
     with open('./out/merged_col1_col2.txt', mode='w') as out:
         zipped = list(zip(col1_lines, col2_lines))
         for line in zipped:
-            out.write("{}\t{}\n".format(line[0], line[1]))
+            out.write("{}\t{}\n".format(line[0], line[1]))  # paste out/col1.txt out/col2.txt
 
 
 if __name__ == '__main__':
