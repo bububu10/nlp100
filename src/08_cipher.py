@@ -8,7 +8,7 @@ def cipher(plain: str) -> str:
 
 def main():
     origin = 'I am a cat.'
-    print('original: ' + origin)
+    print('origin: ' + origin)
     encrypt = cipher(origin)
     print('encrypt: ' + encrypt)
     decrypt = cipher(encrypt)
