@@ -7,7 +7,7 @@ def main():
     with open('out/england_article.json') as file:
         article = json.loads(file.readline())
         text = article.get('text')
-        # print(text)
+        print(text)
 
     pattern = r'\[\[Category:.*\]\]'
     categories = re.findall(pattern, text)
